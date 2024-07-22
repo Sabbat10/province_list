@@ -1,4 +1,4 @@
-const province = [
+export const province = [
   {
     nom: "Bas-Uele",
     chefLieu: "Buta",

@@ -27,3 +27,11 @@ td {
   padding: 5px;
   text-align: center;
 }
+.color-grid {
+  color: black;
+  background-color: #cdd0d9;
+}
+.color-yellow {
+  color: #f4f4f4;
+  background-color: #808642;
+}

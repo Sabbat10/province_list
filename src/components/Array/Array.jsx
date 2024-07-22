@@ -8,7 +8,9 @@ export default function Array() {
       <table>
         <thead>
           <tr>
-            <th>№</th>
+            <th>
+              <b>№</b>
+            </th>
             <th>Province</th>
             <th>Chef-Lieu</th>
             <th>Population</th>
@@ -16,8 +18,12 @@ export default function Array() {
           </tr>
         </thead>
         <tbody>
+          {/* je veux changer de couleur par ligne */}
           {province.map((item, index) => (
-            <tr key={index}>
+            <tr
+              key={{ index }}
+              className={index % 2 === 0 ? "color-grid" : "color-yellow"}
+            >
               <td>{index + 1}</td>
               <td>{item.nom}</td>
               <td>{item.chefLieu}</td>
